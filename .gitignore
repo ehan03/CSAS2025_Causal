@@ -3,3 +3,7 @@
 .RData
 .Ruserdata
 CSAS2025_Causal.Rproj
+.pdf
+output/Image/Simulation1.pdf
+output/Image/Simulation2.pdf
+output/Image/Simulation3.pdf

@@ -86,9 +86,10 @@ gg <- ggplot(dfg, aes(x = age, y = average, fill = as.factor(w), color = as.fact
     panel.grid.minor = element_blank()
   )
 
-ggsave(filename = paste0("output/Image/Simulation1.pdf"), plot = gg,
+ggsave(filename = paste0("../output/Image/Simulation1.pdf"), plot = gg,
        device = 'pdf')
 gg
+saveRDS(dfF, "../data/simulations1.rds")
 ```
 
 ## Simulation 2
@@ -160,9 +161,9 @@ gg <- ggplot(dfg, aes(x = age, y = average, fill = as.factor(w), color = as.fact
     panel.grid.minor = element_blank()
   )
 gg
-ggsave(filename = paste0("output/Image/Simulation2.pdf"), plot = gg,
+ggsave(filename = paste0("../output/Image/Simulation2.pdf"), plot = gg,
        device = 'pdf')
-saveRDS(dfF, "data/simulations2.rds")
+saveRDS(dfF, "../data/simulations2.rds")
 ```
 
 ## Simulation 3
@@ -233,9 +234,9 @@ gg <- ggplot(dfg, aes(x = age, y = average, fill = as.factor(w), color = as.fact
     panel.grid.minor = element_blank()
   )
 gg
-ggsave(filename = paste0("output/Image/Simulation3.pdf"), plot = gg,
+ggsave(filename = paste0("../output/Image/Simulation3.pdf"), plot = gg,
        device = 'pdf')
-saveRDS(dfF, "data/simulations3.rds")
+saveRDS(dfF, "../data/simulations3.rds")
 ```
 
 
@@ -260,7 +261,7 @@ saveRDS(dfF, "data/simulations3.rds")
 ```{r}
 
 sim <- 1
-dfF <- readRDS(paste0("data/simulations", as.character(sim), ".rds"))
+dfF <- readRDS(paste0("../data/simulations", as.character(sim), ".rds"))
 
 # Add splines
 nspline <- 5
