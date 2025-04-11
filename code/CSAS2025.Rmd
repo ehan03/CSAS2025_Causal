@@ -360,14 +360,14 @@ gg <- ggplot(df.mse, aes(x = age, y = value, group = variable, color = variable)
 
 print(gg)
 
-ggsave(filename = paste0("output/Image/mse_simulation", as.character(sim), ".pdf"), plot = gg,
-       device = 'pdf')
-gg
+#ggsave(filename = paste0("output/Image/mse_simulation", as.character(sim), ".pdf"), plot = gg,
+#       device = 'pdf')
+
 df.mse.agg <- df_long %>%
   group_by(variable) %>%
   summarise(value = mean(value), .groups = "drop") 
 write.csv(df.mse.agg, paste0("output/mse_simulation", as.character(sim), ".csv"))
-df.mse.agg[order(df.mse.agg$value),]
+print(df.mse.agg[order(df.mse.agg$value),])
 ```
 
 ## Excersice
