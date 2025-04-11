@@ -37,7 +37,7 @@ getY1 <- function(x, t){
 }
 
 tm <- 25; b1 <- -1/9; b2 <- -6/1000; b3 <- 45/10000; sig_b <- 0.02; sig_e <- 1
-N <- 1000; omega <- 0; s_gamma <- 0.4;
+N <- 500; omega <- 0; s_gamma <- 0.4;
 bi <- rnorm(N, 0, sig_b)
 Y <- getY1(x, 30)
 lt <- seq(18, 40)
@@ -366,13 +366,13 @@ print(gg)
 df.mse.agg <- df_long %>%
   group_by(variable) %>%
   summarise(value = mean(value), .groups = "drop") 
-write.csv(df.mse.agg, paste0("output/mse_simulation", as.character(sim), ".csv"))
+write.csv(df.mse.agg, paste0("../output/mse_simulation", as.character(sim), ".csv"))
 print(df.mse.agg[order(df.mse.agg$value),])
 ```
 
 ## Excersice
 1. Calculate the loss function for simulation 2 and 3. What do you expect?
-2. Modify S,T, and X learner to use other ML models. Can you achieve lower MSE for specific simulations?
+2. Modify S,T, and X learner to use other ML models. Can you achieve lower MSE than RF?
 
 
 

@@ -1,0 +1,8 @@
+"","variable","value"
+"1","mse.cate.oracle",0
+"2","mse.s.cates.ols",0.00401057691297857
+"3","mse.s.cates.rf",0.329317905890293
+"4","mse.t.cates.ols",1.69660253354589
+"5","mse.t.cates.rf",0.0748559672506648
+"6","mse.x.cates.ols",1.69660253354587
+"7","mse.x.cates.rf",0.0756840310885236
