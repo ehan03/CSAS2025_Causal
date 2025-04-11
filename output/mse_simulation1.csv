@@ -1,8 +1,8 @@
 "","variable","value"
 "1","mse.cate.oracle",0
-"2","mse.s.cates.ols",0.00401057691297857
-"3","mse.s.cates.rf",0.329317905890293
-"4","mse.t.cates.ols",1.69660253354589
-"5","mse.t.cates.rf",0.0748559672506648
-"6","mse.x.cates.ols",1.69660253354587
-"7","mse.x.cates.rf",0.0756840310885236
+"2","mse.s.cates.ols",9.29313085871267e-05
+"3","mse.s.cates.rf",0.373021390873554
+"4","mse.t.cates.ols",1.38920028353947
+"5","mse.t.cates.rf",0.0476238329948064
+"6","mse.x.cates.ols",1.38920028353947
+"7","mse.x.cates.rf",0.0557522951692408
